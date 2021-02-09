@@ -6,9 +6,7 @@ class ActionWeather(Action):
 		return 'action_weather'
 		
 	def run(self, dispatcher, tracker, domain):
-        # coding: utf-8
         import requests
-        
         loc = tracker.get_slot('location')
         params = {
           'access_key': '1b490d719183c8cbeda0577c9b7144e4',
